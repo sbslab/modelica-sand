@@ -2,7 +2,7 @@ within SandStorage.Equipment.Examples;
 model ParticleHeater
 "Example model to test the particle heater"
   extends Modelica.Icons.Example;
-  package MediumSan = ENA.Media.SandPolynomial (
+  package MediumSan = SandStorage.Media.SandPolynomial (
     T_default=600+273.15);
   parameter Modelica.Units.SI.MassFlowRate m_flow_nominal = 0.05;
   parameter Modelica.Units.SI.Temperature TIn_nominal = 600+273.15;
@@ -53,6 +53,6 @@ equation
       StopTime=3600,
       Tolerance=1e-06,
       __Dymola_Algorithm="Cvode"),
-    __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Equipment/Examples/ParticleHeaterControl.mos"
+    __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Equipment/Examples/ParticleHeater.mos"
         "Simulate and plot"));
 end ParticleHeater;
