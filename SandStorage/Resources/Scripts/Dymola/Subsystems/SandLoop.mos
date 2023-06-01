@@ -1,0 +1,9 @@
+﻿// Simulate
+simulateModel("SandStorage.Subsystems.SandLoop", stopTime=86400, method="Radau", tolerance=1e-06, resultFile="SandLoop");
+// Plot commands
+createPlot(id=1, position={19, 11, 500, 453}, y={"tan.sta_a.T", "tan.sta_b.T"}, range={0.0, 1.0, 0.0, 2000.0}, erase=false, grid=true, filename="SandLoop.mat", colors={{28,108,200}, {238,46,47}}, timeUnit="d", displayUnits={"degC", "degC"});
+createPlot(id=1, position={19, 11, 500, 453}, y={"senTAirIn.T", "senTAirOut.T"}, range={0.0, 1.0, 0.0, 1000.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}}, timeUnit="d", displayUnits={"degC", "degC"});
+createPlot(id=2, position={541, 18, 479, 287}, y={"tan.QHex_flow"}, range={0.0, 90000.0, -12000000.0, 2000000.0}, erase=false, grid=true, colors={{28,108,200}}, timeUnit="s", displayUnits={"W"});
+createPlot(id=3, position={120, 512, 772, 243}, y={"mov.m_flow", "tan.portHex_a.m_flow"}, range={0.0, 25.0, -10.0, 30.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="h", displayUnits={"kg/s", "kg/s"});
+createPlot(id=3, position={120, 512, 772, 243}, y={"hea.Q_flow", "mov.P"}, range={0.0, 25.0, -5000000.0, 15000000.0}, erase=false, grid=true, subPlot=201, colors={{28,108,200}, {238,46,47}}, timeUnit="h", displayUnits={"W", "W"});
+

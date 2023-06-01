@@ -1,0 +1,8 @@
+﻿// Simulate
+simulateModel("SandStorage.Subsystems.HeatExchangerAirWaterControls", stopTime=7200, method="Cvode", tolerance=1e-06, resultFile="HeatExchangerAirWaterControls");
+// Plot commands
+createPlot(id=1, position={338, 306, 734, 454}, y={"conFan.u_s", "conFan.u_m"}, range={0.0, 7500.0, 380.0, 460.0}, grid=true, filename="HeatExchangerAirWaterControls.mat", colors={{28,108,200}, {238,46,47}}, timeUnit="s");
+createPlot(id=1, position={338, 306, 734, 454}, y={"conFan.y"}, range={0.0, 7500.0, 0.7000000000000001, 1.1}, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="s");
+createPlot(id=2, position={19, 18, 734, 454}, y={"senT.T", "hex.sta_a2.T"}, range={0.0, 7500.0, 0.0, 1500.0}, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"degC", "degC"});
+createPlot(id=2, position={19, 18, 734, 454}, y={"hex.port_b1.h_outflow"}, range={0.0, 7500.0, -1000000.0, 3000000.0}, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="s", displayUnits={"J/kg"});
+

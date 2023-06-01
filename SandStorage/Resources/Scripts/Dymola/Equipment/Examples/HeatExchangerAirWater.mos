@@ -1,0 +1,20 @@
+﻿// Simulate
+simulateModel("SandStorage.Equipment.Examples.HeatExchangerAirWater", stopTime=3600, resultFile="HeatExchangerAirWater");
+// Plot
+createPlot(id=1, position={344, 32, 876, 710}, 
+  y={"hex.sta_a1.T", "hex.sta_b1.T", "hex.sta_a2.T", "hex.sta_b2.T"}, 
+  range={0.0, 3600.0, 100.0, 700.0}, 
+  erase=false, grid=true, 
+  filename="HeatExchangerAirWater.mat", 
+  colors={{28,108,200}, {28,108,200}, {238,46,47}, {238,46,47}}, 
+  patterns={LinePattern.Solid, LinePattern.Dash, LinePattern.Solid, LinePattern.Dash}, 
+  markers={MarkerStyle.Circle, MarkerStyle.Cross, MarkerStyle.Circle, MarkerStyle.Cross}, 
+  timeUnit="s", 
+  displayUnits={"degC", "degC", "degC", "degC"});
+createPlot(id=1, position={344, 32, 876, 710}, y={"hex.port_a1.p", "hex.port_b1.p", "hex.port_a2.p", "hex.port_b2.p"}, range={0.0, 3600.0, 0.0, 10.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {28,108,200}, {238,46,47}, {238,46,47}}, patterns={LinePattern.Solid, LinePattern.Dash, LinePattern.Solid, LinePattern.Dash}, markers={MarkerStyle.Circle, MarkerStyle.Cross, MarkerStyle.Circle, MarkerStyle.Cross}, timeUnit="s", displayUnits={"bar", "bar", "bar", "bar"});
+createPlot(id=1, position={344, 32, 876, 710}, y={"watIn.ports[1].h_outflow", "hex.port_b1.h_outflow", "airIn.ports[1].h_outflow",
+ "hex.port_b2.h_outflow"}, range={0.0, 3600.0, -500000.0, 2500000.0}, erase=false, grid=true, subPlot=103, colors={{28,108,200}, {28,108,200}, {238,46,47}, {238,46,47}}, patterns={LinePattern.Solid, LinePattern.Dash, LinePattern.Solid, LinePattern.Dash}, markers={MarkerStyle.Circle, MarkerStyle.Cross, MarkerStyle.Circle, MarkerStyle.Cross}, timeUnit="s", displayUnits={"J/kg", "J/kg", "J/kg", "J/kg"});
+createPlot(id=2, position={30, 21, 638, 325}, y={"hex.port_a1.m_flow", "hex.port_a2.m_flow"}, range={0.0, 4000.0, -20.0, 40.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"kg/s", "kg/s"});
+createPlot(id=2, position={30, 21, 638, 325}, y={"hex.Q1_flow"}, range={0.0, 4000.0, -5000000.0, 10000000.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="s", displayUnits={"W"});
+
+

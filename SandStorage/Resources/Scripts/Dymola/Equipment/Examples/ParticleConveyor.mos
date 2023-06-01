@@ -1,0 +1,8 @@
+﻿// Simulate
+simulateModel("SandStorage.Equipment.Examples.ParticleConveyor", stopTime=360, method="Cvode", tolerance=1e-06, resultFile="ParticleConveyor");
+// Plot commands
+createPlot(id=1, position={19, 27, 918, 516}, y={"con.m_flow", "conFil.m_flow"}, range={0.0, 400.0, -0.02, 0.08}, erase=false, grid=true, filename="ParticleConveyor.mat", colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"kg/s", "kg/s"});
+createPlot(id=1, position={19, 27, 918, 516}, y={"con.P", "conFil.P"}, range={0.0, 400.0, -5.0, 15.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"W", "W"});
+createPlot(id=1, position={19, 27, 918, 516}, y={"hea.sta_a.T", "hea.sta_b.T"}, range={0.0, 400.0, 500.0, 700.0}, erase=false, grid=true, subPlot=201, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"degC", "degC"});
+createPlot(id=1, position={19, 27, 918, 516}, y={"hea.port_a.h_outflow", "hea.port_b.h_outflow"}, range={0.0, 400.0, 14000000.0, 18000000.0}, erase=false, grid=true, subPlot=202, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"J/kg", "J/kg"});
+

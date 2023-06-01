@@ -1,0 +1,13 @@
+﻿// Simulate
+simulateModel("SandStorage.Media.Validation.SandPolynomialProperties", tolerance=1e-06, resultFile="SandPolynomialProperties");
+// Plot commands
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"p"}, range={0.0, 2000.0, 0.9, 1.15}, grid=true, filename="SandPolynomialProperties.mat", colors={{28,108,200}}, timeUnit="K", displayUnits={"bar"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T_degC", y={"T"}, range={0.0, 2000.0, -500.0, 2000.0}, grid=true, subPlot=201, colors={{28,108,200}}, timeUnit="degC", displayUnits={"degC"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"s"}, range={0.0, 2000.0, -600000.0, 200000.0}, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="K", displayUnits={"J/(kg.K)"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"h"}, range={0.0, 2000.0, -150000000.0, 50000000.0}, grid=true, subPlot=202, colors={{28,108,200}}, timeUnit="K", displayUnits={"J/kg"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"cp"}, range={0.0, 2000.0, -300000.0, 100000.0}, grid=true, subPlot=103, colors={{28,108,200}}, timeUnit="K", displayUnits={"J/(kg.K)"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"cv"}, range={0.0, 2000.0, -300000.0, 100000.0}, grid=true, subPlot=203, colors={{28,108,200}}, timeUnit="K", displayUnits={"J/(kg.K)"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"eta"}, range={0.0, 2000.0, -0.005, 0.02}, grid=true, subPlot=301, colors={{28,108,200}}, timeUnit="K", displayUnits={"Pa.s"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"u"}, range={0.0, 2000.0, -150000000.0, 50000000.0}, grid=true, subPlot=302, colors={{28,108,200}}, timeUnit="K", displayUnits={"J/kg"});
+createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"lambda"}, range={0.0, 2000.0, 0.6, 0.8}, grid=true, subPlot=303, colors={{28,108,200}}, timeUnit="K", displayUnits={"W/(m.K)"});
+

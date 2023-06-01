@@ -1,0 +1,11 @@
+﻿// Simulate
+simulateModel("SandStorage.Equipment.Examples.ParticleStorageWithHX", stopTime=5184000, method="Radau", tolerance=1e-06, resultFile="ParticleStorageWithHX");
+// Plot commands
+createPlot(id=1, position={10, 19, 993, 632}, y={"tan.vol[1].T", "tan.vol[2].T", "tan.vol[3].T", "tan.vol[4].T"}, range={0.0, 60.0, 550.0, 800.0}, grid=true, filename="ParticleStorageWithHX.mat", colors={{28,108,200}, {238,46,47}, {0,140,72}, {217,67,180}}, timeUnit="d", displayUnits={"degC", "degC", "degC", "degC"});
+createPlot(id=1, position={10, 19, 993, 632}, y={"tan.indTanHex.vol[1].T", "tan.indTanHex.vol[2].T", "tan.indTanHex.vol[3].T", 
+"tan.indTanHex.vol[4].T"}, range={0.0, 60.0, 0.0, 800.0}, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}, {0,140,72}, {217,67,180}}, timeUnit="d", displayUnits={"degC", "degC", "degC", "degC"});
+createPlot(id=1, position={10, 19, 993, 632}, y={"tan.vol[1].ports[1].m_flow"}, range={0.0, 60.0, -0.02, 0.12000000000000001}, grid=true, subPlot=201, colors={{28,108,200}}, timeUnit="d", displayUnits={"kg/s"});
+createPlot(id=1, position={10, 19, 993, 632}, y={"tan.indTanHex.vol[1].ports[1].m_flow"}, range={0.0, 60.0, -0.02, 0.12000000000000001}, grid=true, subPlot=202, colors={{28,108,200}}, timeUnit="d", displayUnits={"kg/s"});
+createPlot(id=2, position={327, 306, 500, 454}, y={"tan.sta_a.T", "tan.sta_b.T"}, range={0.0, 60.0, 550.0, 800.0}, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="d", displayUnits={"degC", "degC"});
+createPlot(id=2, position={327, 306, 500, 454}, y={"senTAirIn.T", "senTAirOut.T"}, range={0.0, 60.0, 0.0, 800.0}, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}}, timeUnit="d", displayUnits={"degC", "degC"});
+

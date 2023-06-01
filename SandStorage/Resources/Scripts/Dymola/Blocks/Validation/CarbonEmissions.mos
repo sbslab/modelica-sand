@@ -1,0 +1,6 @@
+// Simulate
+simulateModel("SandStorage.Blocks.Validation.CarbonEmissions", stopTime=604800, tolerance=1e-6, resultFile="CarbonEmissions");
+// Plot
+createPlot(id=1, position={15, 15, 734, 658}, y={"co2e_AZ.y", "co2e_CA.y", "co2e_VT.y"}, range={0.0, 7.0, -10000.0, 70000.0}, grid=true, filename="CarbonEmissions.mat", colors={{28,108,200}, {238,46,47}, {0,140,72}}, timeUnit="d", displayUnits={"kg", "kg", "kg"});
+createPlot(id=1, position={15, 15, 734, 658}, y={"co2e_AZ.co2e_dot.y", "co2e_CA.co2e_dot.y", "co2e_VT.co2e_dot.y"}, range={0.0, 7.0, -0.02, 0.14}, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}, {0,140,72}}, timeUnit="d", displayUnits={"kg/s", "kg/s", "kg/s"});
+

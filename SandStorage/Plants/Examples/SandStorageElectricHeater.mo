@@ -21,11 +21,11 @@ model SandStorageElectricHeater
   parameter Modelica.Units.SI.Area A_PV=PSun/eff_PV/W_m2_nominal
     "Nominal area of a P installation";
   parameter String filNam=
-    "modelica://ENA/Resources/data/Examples/SandStorage/Systems/district2018.mos"
+    "modelica://SandStorage/Resources/Data/Examples/Systems/district2018.mos"
     "File name with thermal loads as time series";
   parameter Modelica.Units.SI.Area A=1
     "Total floor area of building";
-  parameter ENA.Blocks.KeyPerformanceIndicators.Data.NationalUS2021 rNat
+  parameter SandStorage.Blocks.Data.NationalUS2021 rNat
     "Conversion factors r for US national level";
   SandStorage.Plants.SandStorageElectricHeater pla "Plant"
     annotation (Placement(transformation(extent={{40,-60},{60,-40}})));
@@ -55,7 +55,7 @@ model SandStorageElectricHeater
   Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(
     computeWetBulbTemperature=false,
     filNam=Modelica.Utilities.Files.loadResource(
-        "modelica://ENA/Resources/weatherdata/Denver.mos"))
+        "modelica://SandStorage/Resources/weatherdata/Denver.mos"))
     "Weather data model"
     annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
   Modelica.Blocks.Math.Add PRen(
@@ -102,13 +102,13 @@ model SandStorageElectricHeater
   Modelica.Blocks.Math.UnitConversions.To_degC TSteMea
     "Measured steam temperature"
     annotation (Placement(transformation(extent={{-48,-90},{-28,-70}})));
-  Blocks.KeyPerformanceIndicators.CarbonEmissions co2e(A=A, filNam=
-        "modelica://ENA/Resources/Data/CarbonEmissions/5B_Denver_CO.mos")
+  SandStorage.Blocks.CarbonEmissions co2e(A=A, filNam=
+        "modelica://SandStorage/Resources/Data/CarbonEmissions/5B_Denver_CO.mos")
     "CO2e emissions"
     annotation (Placement(transformation(extent={{150,30},{170,50}})));
-  Blocks.KeyPerformanceIndicators.SiteEnergy ESit(n=1, A=A) "Site energy"
+  SandStorage.Blocks.SiteEnergy ESit(n=1, A=A) "Site energy"
     annotation (Placement(transformation(extent={{150,-40},{170,-20}})));
-  Blocks.KeyPerformanceIndicators.SourceEnergy ESou(
+  SandStorage.Blocks.SourceEnergy ESou(
     n=1,
     A=A,                                                 conFac=rNat)
     "Source energy"
@@ -191,6 +191,6 @@ equation
       StopTime=86400,
       Tolerance=1e-06,
       __Dymola_Algorithm="Dassl"),
-    __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Systems/Examples/SandStorageElectricHeater.mos"
+    __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Plants/Examples/SandStorageElectricHeater.mos"
         "Simulate and plot"));
 end SandStorageElectricHeater;

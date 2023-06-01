@@ -1,0 +1,9 @@
+﻿// Simulate
+simulateModel("SandStorage.Subsystems.HeatExchangerAirWaterDistrict", stopTime=86400, method="Cvode", tolerance=1e-06, resultFile="HeatExchangerAirWaterDistrict");
+// Plot commands
+createPlot(id=1, position={524, 254, 598, 454}, y={"conFan.u_s", "conFan.u_m"}, range={0.0, 90000.0, 350.0, 500.0}, erase=false, grid=true, filename="HeatExchangerAirWaterDistrict.mat", colors={{28,108,200}, {238,46,47}}, timeUnit="s");
+createPlot(id=1, position={524, 254, 598, 454}, y={"conFan.y"}, range={0.0, 90000.0, 0.0, 1.5}, erase=false, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="s");
+createPlot(id=2, position={17, 23, 734, 454}, y={"senT.T", "hex.sta_a2.T"}, range={0.0, 90000.0, 0.0, 1500.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"degC", "degC"});
+createPlot(id=2, position={17, 23, 734, 454}, y={"hex.port_b1.h_outflow"}, range={0.0, 90000.0, 0.0, 3000000.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="s", displayUnits={"J/kg"});
+createPlot(id=3, position={35, 368, 588, 371}, y={"senT.T", "watIn.T", "TSteMea.y"}, range={0.0, 1.0, 90.0, 190.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}, {28,108,200}}, patterns={LinePattern.Solid, LinePattern.Solid, LinePattern.Dash}, markers={MarkerStyle.None, MarkerStyle.None, MarkerStyle.Cross}, timeUnit="d", displayUnits={"degC", "degC", "degC"});
+
