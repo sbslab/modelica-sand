@@ -119,8 +119,8 @@ model SandStorageElectricHeater "Sand thermal energy storage plant"
   Buildings.Controls.OBC.CDL.Conversions.BooleanToReal booToRea(realTrue=
         mSan_flow_nominal)
     annotation (Placement(transformation(extent={{-80,0},{-60,20}})));
-  SandStorage.BaseClasses.Boundary_pT_highP pRefSan(redeclare package
-              Medium = MediumSan, nPorts=1) "Reference pressure sand"
+  SandStorage.BaseClasses.Boundary_pT_highP pRefSan(redeclare package Medium =
+                       MediumSan, nPorts=1) "Reference pressure sand"
     annotation (Placement(transformation(extent={{124,-4},{116,4}})));
   SandStorage.Equipment.BaseClasses.ParticleHeaterControl con(
     y(start=1),
@@ -134,8 +134,8 @@ model SandStorageElectricHeater "Sand thermal energy storage plant"
       Medium = MediumSan, m_flow_nominal=mSan_flow_nominal)
     "Sand leaving the tank"
     annotation (Placement(transformation(extent={{78,44},{98,64}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort senTSanIn(redeclare package Medium =
-        MediumSan, m_flow_nominal=mSan_flow_nominal) "Sand entering the tank"
+  Buildings.Fluid.Sensors.TemperatureTwoPort senTSanIn(redeclare package Medium
+      = MediumSan, m_flow_nominal=mSan_flow_nominal) "Sand entering the tank"
     annotation (Placement(transformation(extent={{0,44},{20,64}})));
   Buildings.Fluid.Sensors.SpecificEnthalpyTwoPort hSteSup(redeclare package
       Medium = MediumWat, m_flow_nominal=mWat_flow_nominal)
@@ -271,21 +271,22 @@ equation
   connect(mov.P, sumPow.u1) annotation (Line(
       points={{-48,41},{-48,88},{108,88}},
       color={0,0,127},
-      pattern=LinePattern.Dot));
+      pattern=LinePattern.Dash));
   connect(hea.Q_flow, sumPow.u2) annotation (Line(
       points={{-9,60},{0,60},{0,80},{108,80}},
       color={0,0,127},
-      pattern=LinePattern.Dot));
+      pattern=LinePattern.Dash));
   connect(sumPow.y, P) annotation (Line(
       points={{131,80},{136,80},{136,80},{160,80}},
       color={0,0,127},
-      pattern=LinePattern.Dot));
+      pattern=LinePattern.Dash));
   connect(sumPow.u3, fan.P) annotation (Line(
       points={{108,72},{100,72},{100,-46},{-6,-46},{-6,-39},{-1,-39}},
       color={0,0,127},
-      pattern=LinePattern.Dot));
+      pattern=LinePattern.Dash));
   connect(mFloSet.y, fan.m_flow_in)
-    annotation (Line(points={{19,-70},{10,-70},{10,-42}}, color={0,0,127}));
+    annotation (Line(points={{19,-70},{10,-70},{10,-42}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(con.y, hea.u) annotation (Line(
       points={{-69,80},{-60,80},{-60,60},{-32,60}},
       color={0,0,127},
@@ -295,9 +296,11 @@ equation
       color={0,0,127},
       pattern=LinePattern.Dash));
   connect(conFan.u_m, hRel.y)
-    annotation (Line(points={{70,-82},{70,-87.4}}, color={0,0,127}));
+    annotation (Line(points={{70,-82},{70,-87.4}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(hSteSup.h_out, hRel.u)
-    annotation (Line(points={{70,-109},{70,-101.2}}, color={0,0,127}));
+    annotation (Line(points={{70,-109},{70,-101.2}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false), graphics={
         Rectangle(
           extent={{-100,100},{100,-100}},

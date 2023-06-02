@@ -122,7 +122,7 @@ model SandStorageElectricHeater
     "Power from the grid (negative if exported renewables)"
     annotation (Placement(transformation(extent={{100,-20},{120,0}})));
   Modelica.Blocks.Continuous.Integrator EWin
-    annotation (Placement(transformation(extent={{60,60},{80,80}})));
+    annotation (Placement(transformation(extent={{40,16},{60,36}})));
   Modelica.Blocks.Continuous.Integrator EHea
     annotation (Placement(transformation(extent={{140,-80},{160,-60}})));
   Modelica.Blocks.Sources.RealExpression PHea(y=pla.hea.Q_flow)
@@ -130,7 +130,9 @@ model SandStorageElectricHeater
     annotation (Placement(transformation(extent={{100,-80},{120,-60}})));
 equation
   connect(winTur.vWin, weaBus.winSpe) annotation (Line(points={{-20,32},{-20,70}},
-        color={0,0,127}), Text(
+        color={0,0,127},
+      pattern=LinePattern.Dash),
+                          Text(
       string="%second",
       index=1,
       extent={{-3,6},{-3,6}},
@@ -148,11 +150,14 @@ equation
       color={255,204,51},
       thickness=0.5));
   connect(winTur.P, PRen.u1)
-    annotation (Line(points={{-9,26},{2,26},{2,16},{8,16}}, color={0,0,127}));
+    annotation (Line(points={{-9,26},{2,26},{2,16},{8,16}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(pv1.P, PRen.u2)
-    annotation (Line(points={{-9,-3},{2,-3},{2,4},{8,4}},    color={0,0,127}));
+    annotation (Line(points={{-9,-3},{2,-3},{2,4},{8,4}},    color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(PRen.y, pla.PRen) annotation (Line(points={{31,10},{34,10},{34,-44},{39,
-          -44}},color={0,0,127}));
+          -44}},color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(watIn.ports[1], pla.port_a) annotation (Line(points={{0,-50},{40,-50}},
                             color={238,46,47},
       thickness=0.5));
@@ -160,19 +165,26 @@ equation
           {70,-80},{0,-80}}, color={238,46,47},
       thickness=0.5));
   connect(loa.terminal, gri.terminal) annotation (Line(points={{-60,-30},{-70,-30},
-          {-70,30}}, color={0,120,120}));
+          {-70,30}}, color={0,120,120},
+      thickness=0.5));
   connect(pv1.terminal, gri.terminal) annotation (Line(points={{-30,-10},{-70,-10},
-          {-70,30}}, color={0,120,120}));
+          {-70,30}}, color={0,120,120},
+      thickness=0.5));
   connect(winTur.terminal, gri.terminal)
-    annotation (Line(points={{-30,20},{-70,20},{-70,30}}, color={0,120,120}));
+    annotation (Line(points={{-30,20},{-70,20},{-70,30}}, color={0,120,120},
+      thickness=0.5));
   connect(disDat.y[1], watIn.m_flow_in) annotation (Line(points={{-71,-60},{-30,
-          -60},{-30,-42},{-22,-42}}, color={0,0,127}));
+          -60},{-30,-42},{-22,-42}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(pla.P, inv.u) annotation (Line(points={{62,-44},{70,-44},{70,-30},{22,
-          -30}}, color={0,0,127}));
+          -30}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(inv.y, loa.Pow)
-    annotation (Line(points={{-1,-30},{-40,-30}}, color={0,0,127}));
+    annotation (Line(points={{-1,-30},{-40,-30}}, color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(disDat.y[2], TSteMea.u) annotation (Line(points={{-71,-60},{-56,-60},
-          {-56,-80},{-50,-80}},color={0,0,127}));
+          {-56,-80},{-50,-80}},color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(eneTyp.y, ESou.typSou[1]) annotation (Line(points={{116.6,14.5},{130,
           14.5},{130,6},{148,6}}, color={255,127,0}));
   connect(PGriPos.y, co2e.PEle)
@@ -181,8 +193,9 @@ equation
           130,0},{148,0}}, color={0,0,127}));
   connect(PGri.y, ESit.P[1]) annotation (Line(points={{121,-10},{130,-10},{130,
           -30},{148,-30}}, color={0,0,127}));
-  connect(winTur.P, EWin.u) annotation (Line(points={{-9,26},{52,26},{52,70},{
-          58,70}}, color={0,0,127}));
+  connect(winTur.P, EWin.u) annotation (Line(points={{-9,26},{38,26}},
+                   color={0,0,127},
+      pattern=LinePattern.Dash));
   connect(PHea.y, EHea.u)
     annotation (Line(points={{121,-70},{138,-70}}, color={0,0,127}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
