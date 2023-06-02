@@ -21,7 +21,7 @@ model SandStorageElectricHeater
   parameter Modelica.Units.SI.Area A_PV=PSun/eff_PV/W_m2_nominal
     "Nominal area of a P installation";
   parameter String filNam=
-    "modelica://SandStorage/Resources/Data/Plant/Examples/DailyHeatingProfile.mos"
+    "modelica://SandStorage/Resources/Data/Plants/Examples/DailyHeatingProfile.mos"
     "File name with thermal loads as time series";
   parameter Modelica.Units.SI.Area A=1
     "Total floor area of building";

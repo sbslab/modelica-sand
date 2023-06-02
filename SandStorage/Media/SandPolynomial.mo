@@ -354,12 +354,11 @@ function cp_T
   "Return cp from T, with input u=T and output y=cp"
   extends Modelica.Math.Nonlinear.Interfaces.partialScalarFunction;
   protected
-  constant Real a[4] = {2.805097e-6,-5.403070e-3,4.185520,-9.991502e1}
+  constant Real a[4] = {2.799140e-6,-5.394235e-3,4.181354,-9.929403e1}
       "Regression coefficients, first half";
-  constant Real b[7] = {3.143694e-15,-2.717445e-11,9.635935e-8,-1.792476e-4,
-    1.843242e-1,-9.910093e1,2.283960e4}
+  constant Real b[2] = {1.671556e-1,9.804303e+2}
       "Regression coefficients, second half";
-  constant Temperature T_inflection = 750
+  constant Temperature T_inflection = 800
     "Inflection point where the two polynomial curves meet [K]";
   constant Temperature T1=T_inflection-dT
     "Lower abscissa value for the temperature spline";
@@ -371,16 +370,16 @@ algorithm
   if u < T1 then
     y := a[1]*u^3+a[2]*u^2+a[3]*u+a[4];
   elseif u > T2 then
-    y := b[1]*u^6+b[2]*u^5+b[3]*u^4+b[4]*u^3+b[5]*u^2+b[6]*u+b[7];
+    y := b[1]*u+b[2];
   else
     y := Modelica.Fluid.Utilities.cubicHermite(
       x=u,
       x1=T1,
       x2=T2,
       y1=a[1]*T1^3+a[2]*T1^2+a[3]*T1+a[4],
-      y2=b[1]*T2^6+b[2]*T2^5+b[3]*T2^4+b[4]*T2^3+b[5]*T2^2+b[6]*T2+b[7],
+      y2=b[1]*T2+b[2],
       y1d=3*a[1]*T1^2+2*a[2]*T1+a[3],
-      y2d=6*b[1]*T2^5+5*b[2]*T2^4+4*b[3]*T2^3+3*b[4]*T2^2+2*b[5]*T2+b[6]);
+      y2d=T2+b[1]);
   end if;
 annotation (Inline=true,smoothOrder=2);
 end cp_T;
