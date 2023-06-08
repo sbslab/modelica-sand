@@ -111,10 +111,11 @@ model SandStorageElectricHeaterConstantControl
     m_flow_nominal=mSan_flow_nominal,
     show_T=true,
     dp_nominal=0,
-    Q_flow_nominal=QSan_flow_nominal)
+    Q_flow_nominal=3*QSan_flow_nominal)
     "Particle heater"
     annotation (Placement(transformation(extent={{-30,44},{-10,64}})));
-  Modelica.Blocks.Logical.Hysteresis staMov(uLow=0, uHigh=1e-4)
+  Modelica.Blocks.Logical.Hysteresis staMov(uLow=0, uHigh=1e-4,
+    pre_y_start=true)
     "Mover state"
     annotation (Placement(transformation(extent={{-110,0},{-90,20}})));
   Buildings.Controls.OBC.CDL.Conversions.BooleanToReal booToRea(realTrue=
@@ -193,7 +194,7 @@ model SandStorageElectricHeaterConstantControl
         origin={70,-94})));
   Buildings.Controls.OBC.CDL.Continuous.PID con(
     controllerType=Buildings.Controls.OBC.CDL.Types.SimpleController.PI,
-    k=1,
+    k=5,
     Ti(displayUnit="s") = 120) "Control"
     annotation (Placement(transformation(extent={{-80,80},{-60,60}})));
   Modelica.Blocks.Math.Gain TRel(k=1/TSanIn_nominal)
