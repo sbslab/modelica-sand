@@ -1,0 +1,12 @@
+﻿// Simulate
+simulateModel("SandStorage.Plants.Examples.SandStorageElectricHeaterConstantControl", stopTime=86400, method="Dassl", tolerance=1e-06, resultFile="SandStorageElectricHeaterConstantControl");
+// Plot commands
+createPlot(id=1, position={15, 15, 537, 281}, y={"PRen.y", "pla.P", "gri.P.real"}, range={0.0, 1.0, -1000000.0, 4000000.0}, erase=false, grid=true, filename="SandStorageElectricHeaterConstantControl.mat", colors={{28,108,200}, {238,46,47}, {0,140,72}}, timeUnit="d", displayUnits={"W", "W", "W"});
+createPlot(id=2, position={565, 13, 706, 544}, y={"pla.tan.sta_a.T", "pla.tan.sta_b.T", "pla.con.TMaxSet", "pla.con.TTan_nominal"}, range={0.0, 1.0, 1000.0, 1800.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}, {0,0,0}, {0,0,0}}, patterns={LinePattern.Solid, LinePattern.Solid, LinePattern.Dot, LinePattern.Dot}, timeUnit="d", displayUnits={"degC", "degC", "degC", "degC"});
+createPlot(id=2, position={565, 13, 706, 544}, y={"pla.hex.sta_a2.T", "pla.hex.sta_b2.T"}, range={0.0, 1.0, 0.0, 1500.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}}, timeUnit="d", displayUnits={"degC", "degC"});
+createPlot(id=2, position={565, 13, 706, 544}, y={"pla.hex.sta_a1.T", "pla.hex.sta_b1.T", "TSteMea.y"}, range={0.0, 1.0, 150.0, 190.0}, erase=false, grid=true, subPlot=103, colors={{28,108,200}, {238,46,47}, {238,46,47}}, patterns={LinePattern.Solid, LinePattern.Solid, LinePattern.Dot}, markers={MarkerStyle.None, MarkerStyle.None, MarkerStyle.Cross}, timeUnit="d", displayUnits={"degC", "degC", "degC"});
+createPlot(id=3, position={13, 341, 541, 178}, y={"pla.tan.m_flow", "pla.hex.port_a2.m_flow", "pla.hex.port_a1.m_flow"}, range={0.0, 1.0, -10.0, 30.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}, {0,140,72}}, timeUnit="d", displayUnits={"kg/s", "kg/s", "kg/s"});
+createPlot(id=4, position={282, 163, 489, 575}, y={"co2e.y"}, range={0.0, 90000.0, -10000.0, 30000.0}, erase=false, grid=true, colors={{28,108,200}}, timeUnit="s", displayUnits={"kg/m2"});
+createPlot(id=4, position={282, 163, 489, 575}, y={"ESit.y"}, range={0.0, 90000.0, -50000000000.0, 150000000000.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}}, timeUnit="s", displayUnits={"J/m2"});
+createPlot(id=4, position={282, 163, 489, 575}, y={"ESou.y"}, range={0.0, 90000.0, -200000000000.0, 400000000000.0}, erase=false, grid=true, subPlot=103, colors={{28,108,200}}, timeUnit="s", displayUnits={"J/m2"});
+
