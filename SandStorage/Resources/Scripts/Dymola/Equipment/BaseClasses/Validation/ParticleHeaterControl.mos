@@ -1,0 +1,7 @@
+﻿// Simulate
+simulateModel("SandStorage.Equipment.BaseClasses.Validation.ParticleHeaterControl", stopTime=18000, method="Radau", tolerance=1e-06, resultFile="ParticleHeaterControl");
+// Plot commands
+createPlot(id=1, position={16, 24, 898, 693}, y={"con.TMaxSet", "con.TMinSet", "T.y"}, range={0.0, 5.0, 200.0, 1400.0}, erase=false, grid=true, filename="ParticleHeaterControl.mat", colors={{0,0,0}, {0,0,0}, {28,108,200}}, patterns={LinePattern.Dash, LinePattern.Dash, LinePattern.Solid}, timeUnit="h", displayUnits={"degC", "degC", "degC"});
+createPlot(id=1, position={16, 24, 898, 693}, y={"con.plrMax.y", "con.con.y", "con.plrRen.y"}, range={0.0, 5.0, -0.5, 2.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}, {28,108,200}}, timeUnit="h", displayUnits={"", "", "W"});
+createPlot(id=1, position={16, 24, 898, 693}, y={"con.y"}, range={0.0, 5.0, -0.5, 2.0}, erase=false, grid=true, subPlot=103, colors={{28,108,200}}, timeUnit="h", displayUnits={"W"});
+

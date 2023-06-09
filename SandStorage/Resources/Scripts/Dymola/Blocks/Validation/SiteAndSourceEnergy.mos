@@ -1,0 +1,5 @@
+// Simulate
+simulateModel("SandStorage.Blocks.Validation.SiteAndSourceEnergy", stopTime=3600, tolerance=1e-06, resultFile="SiteAndSourceEnergy");
+// Plot
+createPlot(id=1, position={15, 15, 656, 405}, y={"ESit.y", "ESouUSA.y", "ESouNWPP.y"}, range={0.0, 3600.0, -2000000.0, 14000000.0}, erase=false, grid=true, filename="SiteAndSourceEnergy.mat", colors={{28,108,200}, {238,46,47}, {0,140,72}}, timeUnit="s", displayUnits={"J/m2", "J/m2", "J/m2"});
+

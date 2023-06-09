@@ -1,0 +1,11 @@
+﻿// Simulate
+simulateModel("SandStorage.Subsystems.SandLoopElectrical", stopTime=86400, method="Radau", tolerance=1e-06, resultFile="SandLoopElectrical");
+// Plot commands
+createPlot(id=1, position={22, 16, 586, 521}, y={"con.TMinSet", "con.TMaxSet", "con.TMin", "con.TMax"}, range={0.0, 90000.0, 500.0, 2000.0}, erase=false, grid=true, filename="SandLoopElectrical.mat", colors={{0,0,0}, {0,0,0}, {28,108,200}, {238,46,47}}, patterns={LinePattern.Dash, LinePattern.Dash, LinePattern.Solid, LinePattern.Solid}, timeUnit="s", displayUnits={"degC", "degC", "degC", "degC"});
+createPlot(id=1, position={22, 16, 586, 521}, y={"PRen.y", "con.max.y", "con.PSet.y"}, range={0.0, 90000.0, -5000000.0, 15000000.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}, {0,140,72}}, timeUnit="s", displayUnits={"W", "", ""});
+createPlot(id=1, position={22, 16, 586, 521}, y={"con.plr.y"}, range={0.0, 90000.0, 0.6000000000000001, 1.4000000000000001}, erase=false, grid=true, subPlot=103, colors={{28,108,200}}, timeUnit="s");
+createPlot(id=2, position={633, 16, 410, 334}, y={"tan.m_flow", "tan.indTanHex.m_flow"}, range={0.0, 90000.0, -20.0, 40.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"kg/s", "kg/s"});
+createPlot(id=2, position={633, 16, 410, 334}, y={"hea.Q_flow", "mov.P"}, range={0.0, 90000.0, -10000000.0, 20000000.0}, erase=false, grid=true, subPlot=102, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"W", "W"});
+createPlot(id=3, position={623, 392, 421, 235}, y={"senTAirIn.T", "senTAirOut.T"}, range={0.0, 90000.0, 0.0, 1000.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"degC", "degC"});
+createPlot(id=4, position={25, 493, 584, 237}, y={"gri.P.real", "PRen.y", "mov.P", "hea.Q_flow"}, range={0.0, 90000.0, -5000000.0, 15000000.0}, erase=false, grid=true, colors={{28,108,200}, {238,46,47}, {0,140,72}, {217,67,180}}, timeUnit="s", displayUnits={"W", "W", "W", "W"});
+
