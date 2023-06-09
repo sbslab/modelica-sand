@@ -21,7 +21,7 @@ model SandStorageElectricHeaterConstantControl
   parameter Modelica.Units.SI.Area A_PV=PSun/eff_PV/W_m2_nominal
     "Nominal area of a P installation";
   parameter String filNam=
-    "modelica://SandStorage/Resources/Data/Examples/Systems/district2018.mos"
+    "modelica://SandStorage/Resources/Data/Plants/Examples/DailyHeatingProfile.mos"
     "File name with thermal loads as time series";
   parameter Modelica.Units.SI.Area A=1
     "Total floor area of building";
@@ -91,17 +91,14 @@ model SandStorageElectricHeaterConstantControl
     tableName="tab1",
     fileName=Modelica.Utilities.Files.loadResource(filNam),
     extrapolation=Modelica.Blocks.Types.Extrapolation.Periodic,
-    y(unit={"kg/s","K"}),
-    offset={0,0},
-    columns={2,3},
+    y(unit={"kg/s"}),
+    offset={0},
+    columns={2},
     smoothness=Modelica.Blocks.Types.Smoothness.MonotoneContinuousDerivative1)
     "Data reader for steam loads at district level (y[1] is mass flow rate, y[2] is steam supply temperature)"
     annotation (Placement(transformation(extent={{-92,-70},{-72,-50}})));
   Modelica.Blocks.Math.Gain inv(k=-1) "Invert"
     annotation (Placement(transformation(extent={{20,-40},{0,-20}})));
-  Modelica.Blocks.Math.UnitConversions.To_degC TSteMea
-    "Measured steam temperature"
-    annotation (Placement(transformation(extent={{-48,-90},{-28,-70}})));
   SandStorage.Blocks.CarbonEmissions co2e(A=A, filNam=
         "modelica://SandStorage/Resources/Data/CarbonEmissions/5B_Denver_CO.mos")
     "CO2e emissions"
@@ -169,8 +166,6 @@ equation
           -30}}, color={0,0,127}));
   connect(inv.y, loa.Pow)
     annotation (Line(points={{-1,-30},{-40,-30}}, color={0,0,127}));
-  connect(disDat.y[2], TSteMea.u) annotation (Line(points={{-71,-60},{-56,-60},
-          {-56,-80},{-50,-80}},color={0,0,127}));
   connect(eneTyp.y, ESou.typSou[1]) annotation (Line(points={{116.6,14.5},{130,
           14.5},{130,6},{148,6}}, color={255,127,0}));
   connect(PGriPos.y, co2e.PEle)
