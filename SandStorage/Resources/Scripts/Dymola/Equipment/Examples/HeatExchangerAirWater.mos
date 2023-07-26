@@ -1,5 +1,5 @@
 // Simulate
-simulateModel("SandStorage.Equipment.Examples.HeatExchangerAirWater", stopTime=3600, resultFile="HeatExchangerAirWater");
+simulateModel("SandStorage.Equipment.Examples.HeatExchangerAirWater", stopTime=3600, tolerance=1e-6, resultFile="HeatExchangerAirWater");
 // Plot
 createPlot(id=1, position={344, 32, 876, 710}, 
   y={"hex.sta_a1.T", "hex.sta_b1.T", "hex.sta_a2.T", "hex.sta_b2.T"}, 
