@@ -136,6 +136,10 @@ package SandStorage "Modelica library for heating applications with silica-sand
           textColor={200,153,34},
           textString="2")}),
   Documentation(info="<html>
+<p>
+The package <strong>SandStorage</strong> is a free package
+for adopting silica sand for heating applications.
+</p>
 <h4>License</h4>
 <p>
 <strong>Licensed by the Sustainable Buildings and Societies Laboratory under the 3-Clause BSD License</strong><br/>
