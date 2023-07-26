@@ -469,7 +469,7 @@ end s_T;
 <h4>Applications </h4>
 <p>This model is intended for fluidized sand heating applications. </p>
 <h4>Reference </h4>
-<p>Chase, M.W. Jr. (1998). &ldquo;NIST-JANAF Themochemical Tables, Fourth Edition&rdquo;. In: Journal ofPhysical and Chemical Refer- ence Data Monographs 9, pp. 1&ndash;1951. URL:<a href=\" https://webbook.nist.gov/cgi/cbook.cgi?ID=C14808607&Mask=2\"> https://webbook.nist.gov/cgi/cbook.cgi?ID=C14808607&amp;Mask=2</a>. </p>
+<p>Chase, M.W. Jr. (1998). &ldquo;NIST-JANAF Themochemical Tables, Fourth Edition&rdquo;. In: Journal ofPhysical and Chemical Refer- ence Data Monographs 9, pp. 1&ndash;1951. URL:<a href=\"https://webbook.nist.gov/cgi/cbook.cgi?ID=C14808607&amp;Mask=2\"> https://webbook.nist.gov/cgi/cbook.cgi?ID=C14808607&amp;Mask=2</a>. </p>
 </html>", revisions="<html>
 <ul>
 <li>

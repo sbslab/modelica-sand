@@ -1,4 +1,4 @@
-within ;
+﻿within ;
 package SandStorage "Modelica library for heating applications with silica-sand
   thermal energy storage systems"
   extends Modelica.Icons.Package;
@@ -167,24 +167,23 @@ Kathryn Hinkelman, David Milner, and Wangda Zuo, “Open-Source Models for Sand-
 in Heating Applications,” in The 15th International Modelica Conference, Aachen, Germany, 2023.
 </p>
 <h4>Contact</h4>
-<dt>The development of this package was lead by:</dt>
-<dd><a href=\"https://khinkelman.github.io/\">Kathryn Hinkelman</a></dd>
-<dd>Ph.D. Candidate in Architectural Engineering</dd>
-<dd><a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a></dd>
-<dd>Pennsylvania State University</dd>
-<dd>email: <a href=\"mailto:khinkelman@psu.edu\">khinkelman@psu.edu</a></dd>
-<dd><br /></dd>
-
-
-<dt>The development of this package was managed by:</dt>
-<dd><a href=\"https://sites.psu.edu/sbslab/people/wangda-zuo/\">Wangda Zuo</a></dd>
-<dd>Professor in Architectural and Mechanical Engineering</dd>
-<dd>Associate Director for Research of Global Building Network</dd>
-<dd>Associate Director for Research of Global Building Network</dd>
-<dd>Associate Faculty at Institute of Computational and Data Science</dd>
-<dd><a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a></dd>
-<dd>Pennsylvania State University</dd>
-<dd>email: <a href=\"mailto:wangda.zuo@psu.edu\">wangda.zuo@psu.edu</a></dd>
-<dd><br /></dd>
+<p>
+The development of this package was lead by:<br/>
+	<a href=\"https://khinkelman.github.io/\">Kathryn Hinkelman</a><br/>
+	Ph.D. Candidate in Architectural Engineering<br/>
+	<a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a><br/>
+	Pennsylvania State University<br/>
+	email: <a href=\"mailto:khinkelman@psu.edu\">khinkelman@psu.edu</a>
+</p>
+<p>
+The development of this package was managed by:<br/>
+<a href=\"https://sites.psu.edu/sbslab/people/wangda-zuo/\">Wangda Zuo</a><br/>
+	Professor in Architectural and Mechanical Engineering<br/>
+	Associate Director for Research of Global Building Network<br/>
+	Associate Faculty at Institute of Computational and Data Science<br/>
+	<a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a><br/>
+	Pennsylvania State University<br/>
+	email: <a href=\"mailto:wangda.zuo@psu.edu\">wangda.zuo@psu.edu</a>
+</p>
 </html>"));
 end SandStorage;
