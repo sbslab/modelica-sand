@@ -69,5 +69,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Calculates the thermal discomfort in Kelvin-hours.
+</p>
 </html>"));
 end ThermalDiscomfort;

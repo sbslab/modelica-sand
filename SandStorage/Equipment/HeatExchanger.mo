@@ -48,5 +48,9 @@ January 10, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Model for a heat exchanger with constant effectiveness involving water phase change.
+</p>
 </html>"));
 end HeatExchanger;

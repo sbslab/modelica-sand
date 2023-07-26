@@ -86,5 +86,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Example model for the particle conveyor.
+</p>
 </html>"));
 end ParticleConveyor;

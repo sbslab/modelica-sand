@@ -59,5 +59,9 @@ January 10, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Example model to test the site and source energy blocks.
+</p>
 </html>"));
 end SiteAndSourceEnergy;

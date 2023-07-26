@@ -51,5 +51,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Calculates the source energy from site energy and site-to-source conversion factor(s).
+</p>
 </html>"));
 end SourceEnergy;

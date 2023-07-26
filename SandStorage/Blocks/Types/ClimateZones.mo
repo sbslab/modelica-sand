@@ -21,4 +21,8 @@ January 10, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Data record with ASHRAE Climate Zones (United States).
+</p>
 </html>"));

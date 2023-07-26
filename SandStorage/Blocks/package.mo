@@ -30,5 +30,9 @@ annotation (Icon(graphics={
         origin={40,-35},
         pattern=LinePattern.None,
         fillPattern=FillPattern.Solid,
-        points={{-10.0,0.0},{5.0,5.0},{5.0,-5.0}})}));
+        points={{-10.0,0.0},{5.0,5.0},{5.0,-5.0}})}), Documentation(info="<html>
+<p>
+This package contains blocks to calculate key performance indicators. 
+</p>
+</html>"));
 end Blocks;

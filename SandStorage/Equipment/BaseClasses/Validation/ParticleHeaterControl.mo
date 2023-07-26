@@ -39,5 +39,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Validation model for the renewable-responsive particle heater control.
+</p>
 </html>"));
 end ParticleHeaterControl;

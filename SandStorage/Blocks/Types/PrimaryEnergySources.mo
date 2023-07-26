@@ -17,4 +17,8 @@ January 10, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Data record with primary energy source types.
+</p>
 </html>"));

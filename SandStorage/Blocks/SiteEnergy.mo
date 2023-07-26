@@ -32,5 +32,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Calculates the site energy based on the instantaneous power. 
+</p>
 </html>"));
 end SiteEnergy;

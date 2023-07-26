@@ -165,6 +165,9 @@ equation
                                    Diagram(coordinateSystem(preserveAspectRatio=
            false)),
     Documentation(info="<html>
+<p>Model for a simple particle conveyor with power <img src=\"modelica://SandStorage/Resources/Images/equations/equation-WUdvwbAs.png\" alt=\"P\"/> calculated as</p>
+<p><img src=\"modelica://SandStorage/Resources/Images/equations/equation-bgEyXbBf.png\" alt=\"P = mgh/eta \"/></p>
+<p>where <img src=\"modelica://SandStorage/Resources/Images/equations/equation-RJarmIek.png\" alt=\"m\"/> is the mass flow rate, <img src=\"modelica://SandStorage/Resources/Images/equations/equation-iQEz21kR.png\" alt=\"g\"/> is the gravitational constant, <img src=\"modelica://SandStorage/Resources/Images/equations/equation-FMlUV9G1.png\" alt=\"h\"/> is the height, and <img src=\"modelica://SandStorage/Resources/Images/equations/equation-kCmcVC4f.png\" alt=\"eta\"/> is the efficiency.</p>
 </html>", revisions="<html>
 <ul>
 <li>

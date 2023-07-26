@@ -88,5 +88,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Calculates real-time carbon emissions using a time series data file.
+</p>
 </html>"));
 end CarbonEmissions;
