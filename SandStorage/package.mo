@@ -3,11 +3,6 @@ package SandStorage "Modelica library for heating applications with silica-sand
   thermal energy storage systems"
   extends Modelica.Icons.Package;
 
-
-
-
-
-
   annotation (
  uses(Modelica(version="4.0.0"),Buildings(version="9.0.0"),
       ModelicaReference(version="4.0.0")),
@@ -165,25 +160,6 @@ To cite this library, please use
 <p>
 Kathryn Hinkelman, David Milner, and Wangda Zuo, “Open-Source Models for Sand-Based Thermal Energy Storage 
 in Heating Applications,” in The 15th International Modelica Conference, Aachen, Germany, 2023.
-</p>
-<h4>Contact</h4>
-<p>
-The development of this package was lead by:<br/>
-	<a href=\"https://khinkelman.github.io/\">Kathryn Hinkelman</a><br/>
-	Ph.D. Candidate in Architectural Engineering<br/>
-	<a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a><br/>
-	Pennsylvania State University<br/>
-	email: <a href=\"mailto:khinkelman@psu.edu\">khinkelman@psu.edu</a>
-</p>
-<p>
-The development of this package was managed by:<br/>
-<a href=\"https://sites.psu.edu/sbslab/people/wangda-zuo/\">Wangda Zuo</a><br/>
-	Professor in Architectural and Mechanical Engineering<br/>
-	Associate Director for Research of Global Building Network<br/>
-	Associate Faculty at Institute of Computational and Data Science<br/>
-	<a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a><br/>
-	Pennsylvania State University<br/>
-	email: <a href=\"mailto:wangda.zuo@psu.edu\">wangda.zuo@psu.edu</a>
 </p>
 </html>"));
 end SandStorage;
