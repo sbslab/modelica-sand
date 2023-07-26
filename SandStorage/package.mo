@@ -1,4 +1,4 @@
-within ;
+﻿within ;
 package SandStorage "Modelica library for heating applications with silica-sand
   thermal energy storage systems"
   extends Modelica.Icons.Package;
@@ -167,16 +167,15 @@ Kathryn Hinkelman, David Milner, and Wangda Zuo, “Open-Source Models for Sand-
 in Heating Applications,” in The 15th International Modelica Conference, Aachen, Germany, 2023.
 </p>
 <h4>Contact</h4>
-<p>
 <dt>The development of this package was lead by:</dt>
 <dd><a href=\"https://khinkelman.github.io/\">Kathryn Hinkelman</a></dd>
 <dd>Ph.D. Candidate in Architectural Engineering</dd>
 <dd><a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a></dd>
 <dd>Pennsylvania State University</dd>
 <dd>email: <a href=\"mailto:khinkelman@psu.edu\">khinkelman@psu.edu</a></dd>
-<dd><br /></dd></p>
+<dd><br /></dd>
 
-<p>
+
 <dt>The development of this package was managed by:</dt>
 <dd><a href=\"https://sites.psu.edu/sbslab/people/wangda-zuo/\">Wangda Zuo</a></dd>
 <dd>Professor in Architectural and Mechanical Engineering</dd>
@@ -186,6 +185,6 @@ in Heating Applications,” in The 15th International Modelica Conference, Aache
 <dd><a href=\"https://sites.psu.edu/sbslab/\">Sustainable Buildings and Societies Laboratory</a></dd>
 <dd>Pennsylvania State University</dd>
 <dd>email: <a href=\"mailto:wangda.zuo@psu.edu\">wangda.zuo@psu.edu</a></dd>
-<dd><br /></dd></p>
+<dd><br /></dd>
 </html>"));
 end SandStorage;
