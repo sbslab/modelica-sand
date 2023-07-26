@@ -1,4 +1,4 @@
-﻿within ;
+within ;
 package SandStorage "Modelica library for heating applications with silica-sand
   thermal energy storage systems"
   extends Modelica.Icons.Package;
