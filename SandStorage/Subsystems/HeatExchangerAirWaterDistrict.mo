@@ -157,5 +157,9 @@ June 9, 2023, by Kathryn Hinkelman:<br/>
 First implementation.
 </li>
 </ul>
+</html>", info="<html>
+<p>
+Example model for air-water heat exchanger with a data table for the district load profile.
+</p>
 </html>"));
 end HeatExchangerAirWaterDistrict;
