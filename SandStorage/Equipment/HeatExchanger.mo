@@ -40,5 +40,13 @@ model HeatExchanger
           textString="water"),
         Line(points={{-40,34},{40,34},{20,24}}, color={255,0,0}),
         Line(points={{40,-34},{-40,-34},{-20,-24}}, color={0,255,0})}),
-       Diagram(coordinateSystem(preserveAspectRatio=false)));
+       Diagram(coordinateSystem(preserveAspectRatio=false)),
+    Documentation(revisions="<html>
+<ul>
+<li>
+January 10, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end HeatExchanger;

@@ -80,5 +80,13 @@ equation
   connect(to_kg_A.y, y)
     annotation (Line(points={{93,0},{110,0}}, color={0,0,127}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio=false)),
+    Documentation(revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end CarbonEmissions;

@@ -43,5 +43,13 @@ equation
   connect(r.y, ESou.u1) annotation (Line(points={{-39,40},{-8,40},{-8,6},{-2,6}},
         color={0,0,127}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false)));
+        coordinateSystem(preserveAspectRatio=false)),
+    Documentation(revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end SourceEnergy;

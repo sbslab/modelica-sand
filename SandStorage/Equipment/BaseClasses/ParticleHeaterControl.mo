@@ -89,5 +89,12 @@ equation
         coordinateSystem(preserveAspectRatio=false)),
     Documentation(info="<html>
 <p>Control is designed for a constant mass flow rate at the nominal condition.</p>
+</html>", revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
 </html>"));
 end ParticleHeaterControl;

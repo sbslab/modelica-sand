@@ -14,4 +14,11 @@ type ClimateZones = enumeration(
     ClimateZone6B "Climate zone 6B, Helena, MT",
     ClimateZone7 "Climate zone 7, Duluth, MN",
     ClimateZone8 "Climate zone 8, Fairbanks, AK")
-  "ASHRAE climate zones";
+  "ASHRAE climate zones" annotation (Documentation(revisions="<html>
+<ul>
+<li>
+January 10, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));

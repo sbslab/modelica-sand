@@ -145,9 +145,17 @@ equation
           {80,-22},{62,-22}}, color={0,0,127}));
     annotation(Icon(coordinateSystem(preserveAspectRatio = false,extent = {{-100.0,-100.0},{100.0,100.0}})),
         experiment(
-      StopTime=31536000,
+      StopTime=86400,
       Tolerance=1e-06,
       __Dymola_Algorithm="Radau"),
     __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Subsystems/HeatExchangerAirWaterDistrict.mos"
-        "Simulate and plot"));
+        "Simulate and plot"),
+    Documentation(revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end HeatExchangerAirWaterDistrict;

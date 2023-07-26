@@ -9,4 +9,12 @@ type PrimaryEnergySources = enumeration(
     Coal "Coal",
     Biomass "Biomass",
     Petroleum "Petroleum")
-  "Enumeration of primary source energy types";
+  "Enumeration of primary source energy types" annotation (Documentation(
+      revisions="<html>
+<ul>
+<li>
+January 10, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));

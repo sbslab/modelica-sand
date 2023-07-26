@@ -28,5 +28,11 @@ This example checks thermophysical properties of the medium.
 </p>
 </html>",
 revisions="<html>
+<ul>
+<li>
+January 5, 2023, by Kathryn Hinkelman:<br/>
+Re-implemetation from Buildings library
+</li>
+</ul>
 </html>"));
 end AirProperties;

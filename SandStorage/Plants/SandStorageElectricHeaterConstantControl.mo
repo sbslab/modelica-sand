@@ -128,8 +128,8 @@ model SandStorageElectricHeaterConstantControl
       Medium = MediumSan, m_flow_nominal=mSan_flow_nominal)
     "Sand leaving the tank"
     annotation (Placement(transformation(extent={{78,44},{98,64}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort senTSanIn(redeclare package Medium
-      = MediumSan, m_flow_nominal=mSan_flow_nominal) "Sand entering the tank"
+  Buildings.Fluid.Sensors.TemperatureTwoPort senTSanIn(redeclare package Medium =
+        MediumSan, m_flow_nominal=mSan_flow_nominal) "Sand entering the tank"
     annotation (Placement(transformation(extent={{0,44},{20,64}})));
   Buildings.Fluid.Sensors.SpecificEnthalpyTwoPort hSteSup(redeclare package
       Medium = MediumWat, m_flow_nominal=mWat_flow_nominal)
@@ -327,5 +327,13 @@ equation
           lineColor={27,0,55},
           fillColor={170,213,255},
           fillPattern=FillPattern.Solid)}),                      Diagram(
-        coordinateSystem(preserveAspectRatio=false, extent={{-140,-140},{140,120}})));
+        coordinateSystem(preserveAspectRatio=false, extent={{-140,-140},{140,120}})),
+    Documentation(revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end SandStorageElectricHeaterConstantControl;

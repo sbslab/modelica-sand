@@ -54,5 +54,13 @@ equation
       Tolerance=1e-06,
       __Dymola_Algorithm="Cvode"),
     __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Equipment/Examples/ParticleHeater.mos"
-        "Simulate and plot"));
+        "Simulate and plot"),
+    Documentation(revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end ParticleHeater;

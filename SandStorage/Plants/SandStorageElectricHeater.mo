@@ -324,5 +324,13 @@ equation
           lineColor={27,0,55},
           fillColor={170,213,255},
           fillPattern=FillPattern.Solid)}),                      Diagram(
-        coordinateSystem(preserveAspectRatio=false, extent={{-140,-140},{140,120}})));
+        coordinateSystem(preserveAspectRatio=false, extent={{-140,-140},{140,120}})),
+    Documentation(revisions="<html>
+<ul>
+<li>
+June 9, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end SandStorageElectricHeater;

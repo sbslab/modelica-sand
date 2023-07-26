@@ -51,5 +51,13 @@ equation
       Tolerance=1e-06,
       __Dymola_Algorithm="Dassl"),
       __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Blocks/Validation/SiteAndSourceEnergy.mos"
-        "Simulate and plot"));
+        "Simulate and plot"),
+    Documentation(revisions="<html>
+<ul>
+<li>
+January 10, 2023, by Kathryn Hinkelman:<br/>
+First implementation.
+</li>
+</ul>
+</html>"));
 end SiteAndSourceEnergy;
