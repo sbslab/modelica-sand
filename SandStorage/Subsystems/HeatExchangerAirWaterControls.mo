@@ -118,7 +118,7 @@ equation
           34},{-32,34}}, color={0,0,127}));
     annotation(Icon(coordinateSystem(preserveAspectRatio = false,extent = {{-100.0,-100.0},{100.0,100.0}})),
         experiment(
-      StopTime=3600,
+      StopTime=7200,
       Tolerance=1e-06,
       __Dymola_Algorithm="Cvode"),
     __Dymola_Commands(file="modelica://SandStorage/Resources/Scripts/Dymola/Subsystems/HeatExchangerAirWaterControls.mos"
