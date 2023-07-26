@@ -1,4 +1,4 @@
-﻿// Simulate
+// Simulate
 simulateModel("SandStorage.Subsystems.SandLoopElectrical", stopTime=86400, method="Radau", tolerance=1e-06, resultFile="SandLoopElectrical");
 // Plot commands
 createPlot(id=1, position={22, 16, 586, 521}, y={"con.TMinSet", "con.TMaxSet", "con.TMin", "con.TMax"}, range={0.0, 90000.0, 500.0, 2000.0}, erase=false, grid=true, filename="SandLoopElectrical.mat", colors={{0,0,0}, {0,0,0}, {28,108,200}, {238,46,47}}, patterns={LinePattern.Dash, LinePattern.Dash, LinePattern.Solid, LinePattern.Solid}, timeUnit="s", displayUnits={"degC", "degC", "degC", "degC"});

@@ -1,4 +1,4 @@
-﻿// Simulate
+// Simulate
 simulateModel("SandStorage.Media.Validation.SandPolynomialProperties", tolerance=1e-06, resultFile="SandPolynomialProperties");
 // Plot commands
 createPlot(id=1, position={15, 15, 1110, 710}, x="T", y={"p"}, range={0.0, 2000.0, 0.9, 1.15}, grid=true, filename="SandPolynomialProperties.mat", colors={{28,108,200}}, timeUnit="K", displayUnits={"bar"});

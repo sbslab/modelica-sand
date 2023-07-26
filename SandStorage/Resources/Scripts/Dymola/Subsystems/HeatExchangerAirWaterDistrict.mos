@@ -1,4 +1,4 @@
-﻿// Simulate
+// Simulate
 simulateModel("SandStorage.Subsystems.HeatExchangerAirWaterDistrict", stopTime=86400, method="Cvode", tolerance=1e-06, resultFile="HeatExchangerAirWaterDistrict");
 // Plot commands
 createPlot(id=1, position={524, 254, 598, 454}, y={"conFan.u_s", "conFan.u_m"}, range={0.0, 90000.0, 350.0, 500.0}, erase=false, grid=true, filename="HeatExchangerAirWaterDistrict.mat", colors={{28,108,200}, {238,46,47}}, timeUnit="s");

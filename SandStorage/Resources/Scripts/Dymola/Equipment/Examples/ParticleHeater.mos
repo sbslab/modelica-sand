@@ -1,4 +1,4 @@
-﻿// Simulate
+// Simulate
 simulateModel("SandStorage.Equipment.Examples.ParticleHeater", stopTime=3600, method="Cvode", tolerance=1e-06, resultFile="ParticleHeater");
 // Plot commands
 createPlot(id=1, position={35, 35, 734, 454}, y={"hea.Q_flow"}, range={0.0, 3600.0, -5000.0, 15000.0}, erase=false, grid=true, filename="ParticleHeater.mat", colors={{28,108,200}}, timeUnit="s", displayUnits={"W"});

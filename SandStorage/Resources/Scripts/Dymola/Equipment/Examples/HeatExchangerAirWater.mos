@@ -1,4 +1,4 @@
-﻿// Simulate
+// Simulate
 simulateModel("SandStorage.Equipment.Examples.HeatExchangerAirWater", stopTime=3600, resultFile="HeatExchangerAirWater");
 // Plot
 createPlot(id=1, position={344, 32, 876, 710}, 
