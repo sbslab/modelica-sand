@@ -150,7 +150,7 @@ This version of the SandStorage package consists of
 </p>
 <h4>License</h4>
 <p>
-<strong>Licensed by the Sustainable Buildings and Societies Laboratory under the 3-Clause BSD License</strong><br>
+<strong>Licensed by the Sustainable Buildings and Societies Laboratory under the 3-Clause BSD License</strong><br/>
 Copyright &copy; 2023, Sustainable Buildings and Societies Laboratory, The Pennsylvania State University
 </p>
 <h4>Reference</h4>
