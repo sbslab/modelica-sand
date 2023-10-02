@@ -16,11 +16,7 @@ https://simulationresearch.lbl.gov/modelica/download.html.
 LBNL recommends to install the offically released library in a different location than where models
 are developed. Their install guide can be seen here: https://simulationresearch.lbl.gov/modelica/installLibrary.html.
 
-### BuildingsPy
-The unit tests require `buildingspy`. Information on installation and use can be found here: 
-https://simulationresearch.lbl.gov/modelica/buildingspy/
-
 # Publications
 
-Kathryn Hinkelman, David Milner, Wangda Zuo. 2023. “Open-Source Models for Sand-Based Thermal Energy Storage 
-in Heating Applications,” Proceedings of The 15th International Modelica Conference. Aachen, Germany.
+Kathryn Hinkelman, David Milner, Wangda Zuo. 2023. “[Open-Source Models for Sand-Based Thermal Energy Storage 
+in Heating Applications](https://www.researchgate.net/publication/372649588_Open-Source_Models_for_Sand-Based_Thermal_Energy_Storage_in_Heating_Applications),” Proceedings of The 15th International Modelica Conference. Aachen, Germany.
